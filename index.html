@@ -1,210 +1,180 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>TECHSTITUTION</title>
-<link  rel="stylesheet" href="css/style.css" />
-<link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
-<script src="js/jquery-3.2.1.min.js" ></script>
-<script src="css/bootstrap/js/bootstrap.min.js"></script>
+   <meta charset="UTF-8">
+   <title> Techstitution </title>
+
+   <link href="css/style.css" rel="stylesheet" />
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+   <script type="text/javascript" src="css/bootstrap/js/bootstrap.min.js"></script>
+   <script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
-<h1>Selectors Exercise</h1>
 
-<p>PARAGRAPH NOT INSIDE A DIV</p>
+<div class="container border-wait-ct">
+  <h2 class="well well-sm">Forma e regjistrimit te pikave kufitare</h2>
+  <form class="form-horizontal" id="border-wait-form">
+    <div class="form-group">
+      <label class="control-label col-xs-2 label-top-fix">Pika kufitare:</label>
+      <div class="col-xs-8">
+       <div class="dropdown">
+			<button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown">Zgjedh piken kufitare
+				<span class="caret"></span></button>
+			<ul class="dropdown-menu">
+				<li><a href="#">Dheu i bardhe</a></li>
+				<li><a href="#">Hani i Elezit</a></li>
+				<li><a href="#">Merdare</a></li>
+			</ul>
+		</div>
+      </div>
+    </div>
+	<h4>Hyrje</h4>
+    <div class="form-group">
+      <label class="control-label col-xs-2 label-top-fix">Minimum</label>
+      <div class="col-xs-6">.
+		<input type="text" class="form-control" id="min1">
+      </div>
+	  <span class="label-top-fix">minuta </span>
+    </div> 
 
-<div>
-  <p class="hello">I am a paragraph with a class</p>
-  <p id="special">I am a paragraph with an ID</p>
+    <div class="form-group">
+      <label class="control-label col-xs-2">Maximum</label>
+      <div class="col-xs-6">
+        <input type="text" class="form-control" id="max2">
+      </div>
+	  <span>minuta </span>
+    </div>
+	<h4>Dalje</h4>
+    <div class="form-group">
+      <label class="control-label col-xs-2">Minimum</label>
+      <div class="col-xs-6">.
+		<input type="text" class="form-control" id="min3">
+      </div>
+	  <span>minuta </span>
+    </div> 
 
-  <h2>I am an awesome h2</h2>
+    <div class="form-group">
+      <label class="control-label col-xs-2">Maximum</label>
+      <div class="col-xs-6">
+        <input type="text" class="form-control" id="max4">
+      </div>
+	  <span>minuta </span>
+    </div>
+	<h4>Hyrje</h4>
+    <div class="form-group">
+      <label class="control-label col-xs-2">Minimum</label>
+      <div class="col-xs-6">.
+		<input type="text" class="form-control" id="min5">
+      </div>
+	  <span>metra </span>
+    </div> 
 
+    <div class="form-group">
+      <label class="control-label col-xs-2">Maximum</label>
+      <div class="col-xs-6">
+        <input type="text" class="form-control" id="max6">
+      </div>
+	  <span>metra </span>
+    </div>
+	<h4>Dalje</h4>
+    <div class="form-group">
+      <label class="control-label col-xs-2">Minimum</label>
+      <div class="col-xs-6">.
+		<input type="text" class="form-control" id="mind7">
+      </div>
+	  <span>metra </span>
+    </div> 
 
-  <p>Roof party yr hella synth, Wes Anderson narwhal four
-  dollar toast before they sold out retro lo-fi. 
-  Austin iPhone pop-up farm-to-table, PBRB McSweeney's ennui messenger bag distillery before they sold out 
-  Portland wolf fanny pack YOLO. Locavore slow-carb trust fund farm-to-table. Pinterest gastropub lo-fi, 
-  McSweeney's trust fund VHS shabby chic ugh Austin twee. Messenger bag banjo lumbersexual, 
-  whatever 3 wolf moon XOXO normcore. Pug fanny pack 3 wolf moon, 
-  typewriter organic chia mustache scenester seitan shabby chic Blue Bottle salvia ugh iPhone. 
-  Fanny pack Williamsburg direct trade, cold-pressed disrupt flannel listicle health goth asymmetrical freegan mixtape street art pour-over whatever.</p>
-
+    <div class="form-group">
+      <label class="control-label col-xs-2">Maximum</label>
+      <div class="col-xs-6">
+        <input type="text" class="form-control" id="maxd8">
+      </div>
+	  <span>metra </span>
+    </div>
+	
+    <div class="form-group">
+      <div class="col-xs-12 text-center">
+        <input type="button" class="btn btn-info" value="Dergo">
+        <input type="button" class="btn btn-info" value="Fshij">
+      </div>
+    </div>
+  </form>
 </div>
 
-<div>
-  <h2>Things I need to do</h2>
-
-  <ul>
-    <li>Walk Dog <input  type="checkbox" checked> </li>
-    <li>Feed Dog <input  type="checkbox" checked> </li>
-    <li>Wash Dog <input  type="checkbox"></li>
-  </ul>
-</div>
-
-<div>
-  <h2>I am another awesome h2</h2>
-
-  <p>Cardigan Tumblr mlkshk, fap tilde 3 wolf moon Portland. Heirloom health goth taxidermy blog lo-fi selfies, post-ironic master cleanse fingerstache normcore. Kickstarter plaid twee, bespoke single-origin coffee sustainable lo-fi vinyl Pinterest pork belly <em>cronut skateboard</em> 3 wolf moon. Normcore single-origin coffee salvia, bespoke Austin swag Godard before they sold out kogi disrupt locavore. Lumbersexual Shoreditch Vice, artisan American Apparel master cleanse yr salvia vegan. Bespoke letterpress heirloom kale chips deep v four loko. Lomo sustainable put a bird on it trust fund post-ironic</p>
-
-  <p>I'm the second paragraph inside this div!</p>
-</div>
-
-<p>PARAGRAPH NOT INSIDE A DIV</p>
 
 
-<div class="intro">
-  <h2>A less awesome h2</h2>
+------------
 
-  <p>Roof party yr hella synth, Wes Anderson narwhal four dollar toast before they sold out retro lo-fi. Austin iPhone pop-up farm-to-table, PBRB McSweeney's ennui messenger bag distillery before they sold out Portland wolf fanny pack YOLO. Locavore slow-carb trust fund farm-to-table. Pinterest gastropub lo-fi, McSweeney's trust fund VHS shabby chic ugh Austin twee. Messenger bag banjo lumbersexual, whatever 3 wolf moon XOXO normcore. Pug fanny pack 3 wolf moon, typewriter organic chia mustache scenester seitan shabby chic Blue Bottle salvia ugh iPhone. Fanny pack Williamsburg direct trade, cold-pressed disrupt flannel listicle health goth asymmetrical freegan mixtape street art pour-over whatever</p>
+ <!-- <div class="container"> -->
+        <!-- <h2 class="well well-sm"></h2> -->
+        <!-- <form class="form-horizontal" action=""> -->
+            <!-- <div class="form-group"> -->
+                <!-- <div class="col-sm-6"> -->
+                    
+                <!-- </div> -->
+            <!-- </div> -->
+            <!-- <div class="form-group"> -->
+                <!-- <div class="col-sm-6"> -->
+                    <!-- <hr> -->
+                    <!-- <h4>Hyrje</h4> -->
+                        <!-- <div class="form-group"> -->
+                            <!-- <label>Minimum</label> -->
+                            <!-- <input type="text" class="form-control" id="min">minuta -->
+                        <!-- </div> -->
+                        <!-- <div class="form-group"> -->
+                            <!-- <label>Maximum</label> -->
+                            <!-- <input type="text" class="form-control" id="max">minuta -->
+                        <!-- </div> -->
+                <!-- </div> -->
+            <!-- </div> -->
+            <!-- <div class="form-group"> -->
+                <!-- <div class="col-sm-6"> -->
+                    <!-- <h4>Dalje</h4> -->
+                        <!-- <div class="form-group"> -->
+                            <!-- <label>Minimum</label> -->
+                            <!-- <input type="text" class="form-control" id="mind">minuta -->
+                        <!-- </div> -->
+                        <!-- <div class="form-group"> -->
+                            <!-- <label>Maximum</label> -->
+                            <!-- <input type="text" class="form-control" id="maxd">minuta -->
+                        <!-- </div> -->
+                <!-- </div> -->
+            <!-- </div> -->
+            <!-- <div class="form-group"> -->
+                <!-- <div class=" col-sm-6"> -->
+                    <!-- <hr> -->
+                    <!-- <h4>Hyrje</h4> -->
+                        <!-- <div class="form-group"> -->
+                            <!-- <label>Minimum</label> -->
+                            <!-- <input type="text" class="form-control" id="min">metra -->
+                        <!-- </div> -->
+                        <!-- <div class="form-group"> -->
+                            <!-- <label>Maximum</label> -->
+                            <!-- <input type="text" class="form-control" id="max">metra -->
+                        <!-- </div> -->
+                <!-- </div> -->
+                <!-- <div class="form-group"> -->
+                    <!-- <div class="col-sm-6"> -->
 
-  <p id="int">One last paragraph here!</p>
+                        <!-- <h4>Dalje</h4> -->
+                            <!-- <div class="form-group"> -->
+                                <!-- <label>Minimum</label> -->
+                                <!-- <input type="text" class="form-control" id="mind">metra -->
+                            <!-- </div> -->
+                            <!-- <div class="form-group"> -->
+                                <!-- <label>Maximum</label> -->
+                                <!-- <input type="text" class="form-control" id="maxd">metra -->
+                            <!-- </div> -->
+                    <!-- </div> -->
 
-  <a href="http://www.facebook.com">I am a link to facebook</a>
-  <a href="http://www.facebook.com">I am another link to facebook</a>
-  <br>
+                <!-- </div> -->
+            <!-- </div> -->
 
-  <input type="text" name="name" /><label> Name</label><br/>
-  <input type="password" name="password" /><label> Password</label><br/>
-
-</div>
-
-<p>PARAGRAPH NOT INSIDE A DIV</p>
-
-
-
-
-
-<!-- <h1>Paragrahps</h1> -->
-<!-- <h6>What is a paragraph?</h6> -->
-<!-- <p>Paragraphs are the <strong>building</strong> blocks of <em>papers</em>.</p> -->
-<!-- <br> -->
-<!-- <ul> -->
-<!-- <li>bread</li> -->
-<!-- <li>coffe</li> -->
-<!-- <li>milk</li> -->
-<!-- <li>butter</li> -->
-<!-- </ul> -->
-<!-- <br> -->
-<!-- <ol> -->
-<!-- <li>bread</li> -->
-<!-- <li>milk</li> -->
-<!-- <li>milk</li> -->
-<!-- <li>butter</li> -->
-<!-- <ul> -->
-<!-- <li>sunflower</li> -->
-<!-- <li>banana</li> -->
-<!-- </ul> -->
-<!-- <ol> -->
-<!-- <li>frozen banana</li> -->
-<!-- <li>non-frozen banana</li> -->
-<!-- </ol> -->
-<!-- <br> -->
-<!-- <table border="1"> -->
-<!-- <caption>Te dhenat</caption> -->
-<!-- <tr> -->
-<!-- <td>Name </td> -->
-<!-- <td>Email </td>  -->
-<!-- <td>Workshop</td> -->
-<!-- </tr> -->
-<!-- <tr> -->
-<!-- <td>Vesa</td> -->
-<!-- <td>vesalihu@gmail.com </td>  -->
-<!-- <td>TECHSTITUTION</td> -->
-<!-- </tr> -->
-<!-- </table> -->
-<!-- <br> -->
-
-<!-- <table border="1"> -->
-<!-- <tr> -->
-<!-- <th>Id</th> -->
-<!-- <th>Name</th> -->
-<!-- <th>age</th> -->
-<!-- <th>city</th> -->
-<!-- </tr> -->
-<!-- <tr> -->
-<!-- <td>1</td> -->
-<!-- <td>john</td> -->
-<!-- <td>54</td> -->
-<!-- <td>nyc</td> -->
-<!-- <tr> -->
-<!-- <tr> -->
-<!-- <td>2</td> -->
-<!-- <td>isabella</td> -->
-<!-- <td>31</td> -->
-<!-- <td>minoseta</td> -->
-<!-- <tr> -->
-<!-- <tr> -->
-<!-- <td>3</td> -->
-<!-- <td>vesa</td> -->
-<!-- <td>41</td> -->
-<!-- <td>xxx</td> -->
-<!-- <tr> -->
-<!-- <tr> -->
-<!-- <td>4</td> -->
-<!-- <td>vesa</td> -->
-<!-- <td>51</td> -->
-<!-- <td>yy</td> -->
-<!-- <!-- <tr> --> 
-<!-- <!-- <table> --> 
-<!-- <br> -->
-<!-- <div> -->
-<!-- <p class="highlight">you say yes</p> -->
-<!-- <p>I say no</p> -->
-<!-- </div> -->
-<!-- <div> -->
-<!-- <p class="highlight">you say goodbye</p> -->
-<!-- <p>I say hello</p> -->
-<!-- </div> -->
-
-<!-- <br> -->
-<!-- <h1>Register</h1> -->
-<!-- <form> -->
-<!-- Firstname:<input type="text" name="name" placeholder="firstname"> -->
-<!-- Lastname:<input type="text" name="lastname" placeholder="lastname"> -->
-<!-- <br> -->
-<!-- Male <input type="radio" name="gender" value="male"> -->
-<!-- Female <input type="radio" name="gender" value="female"> -->
-<!-- Other <input type="radio" name="gender" value="other"> -->
-<!-- <br> -->
-<!-- Email <input type="email" name="email" placeholder="your email"> -->
-<!-- Password <input type="password" name="password"placeholder="your password"> -->
-<!-- <br> -->
-<!-- Birthday:<select name="month"> -->
-<!-- <option value="month">Month</option> -->
-<!-- <option value="0">Janar</option> -->
-<!-- <option value="1">Shkurt</option> -->
-<!-- <option value="2">Mars</option> -->
-<!-- <option value="3">prill</option> -->
-<!-- <option value="4">maj</option> -->
-<!-- <option value="5">qershor</option> -->
-<!-- <option value="6">korrik</option> -->
-<!-- <option value="7">gusht</option> -->
-<!-- </select> -->
-<!-- <select name="day"> -->
-<!-- <option value="day">Day</option> -->
-<!-- <option value="1">1</option> -->
-<!-- <option value="2">2</option> -->
-<!-- <option value="3">3</option> -->
-<!-- <option value="4">4</option> -->
-<!-- <option value="5">5</option> -->
-<!-- <option value="6">6</option> -->
-<!-- <option value="7">7</option> -->
-<!-- <option value="8">8</option> -->
-<!-- </select> -->
-<!-- <select name="year">   -->
-<!-- <option value="0" >1</option> -->
-<!-- <option value="1">2</option> -->
-<!-- <option value="2">3</option> -->
-<!-- <option value="3">4</option> -->
-<!-- <option value="4">5</option> -->
-<!-- <option value="5">6</option> -->
-<!-- <option value="6">7</option> -->
-<!-- <option value="7">8</option> -->
-<!-- </select> -->
-<!-- <br> -->
-<!-- I agree to the terms and conditions <input type="checkbox"> -->
-<!-- <br> -->
-<!-- <input type="submit" value="Submit"> -->
-
-<!-- </form> -->
+            <!-- <div class="container"> -->
+                
+           <!-- </div> -->
+</form>		
 </body>
 </html>

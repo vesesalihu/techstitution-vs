@@ -1,0 +1,101 @@
+<%- include partials/header %>
+<% include partials/nav %>
+
+
+<div class="container border-wait-ct">
+  <h2 class="panel panel-info"><%=title%></h2> 
+  <form class="form-horizontal" method="POST" action="/add"  id="border-wait-form">
+    <div class="form-group">
+      <label class="control-label col-xs-2 label-top-fix">Pika kufitare:</label>
+      <div class="col-xs-4">
+      <div class="dropdown">
+		<!--	<button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown">Zgjedh piken kufitare -->
+				<span class="caret"></span></button>
+		<select class="form-control" id="pika_kufitare" name="pika_kufitare">
+               <option selected id="default">Zgjedh piken kufitare...</option>
+               <option id="Morine">Morine</option>
+               <option id="Merdare">Merdare</option>
+               <option id="Dheu_bardhe">Dheu i bardhe</option>
+               <option id="Jarinje">Jarinje</option>
+             </select>
+		</div>
+      </div>
+    </div>
+	<hr>
+	<h4>Hyrje</h4>
+    <div class="form-group">
+      <label class="control-label col-xs-2 label-top-fix">Minimum</label>
+      <div class="col-xs-4">
+		<input type="text" class="form-control" id="min1" name="hyrja_min_minuta">
+      </div>
+	  <span class="label-top-fix">minuta </span>
+    </div> 
+
+    <div class="form-group">
+      <label class="control-label col-xs-2">Maximum</label>
+      <div class="col-xs-4">
+        <input type="text" class="form-control" id="max2" name="hyrja_max_minuta">
+      </div>
+	  <span>minuta </span>
+    </div>
+	
+	<h4>Dalje</h4>
+    <div class="form-group">
+      <label class="control-label col-xs-2">Minimum</label>
+      <div class="col-xs-4">
+		<input type="text" class="form-control" id="min3" name="dalja_min_minuta">
+      </div>
+	  <span>minuta </span>
+    </div> 
+
+    <div class="form-group">
+      <label class="control-label col-xs-2">Maximum</label>
+      <div class="col-xs-4">
+        <input type="text" class="form-control" id="max4" name="dalja_max_minuta">
+      </div>
+	  <span>minuta </span>
+    </div>
+	<hr>
+	<h4>Hyrje</h4>
+    <div class="form-group">
+      <label class="control-label col-xs-2">Minimum</label>
+      <div class="col-xs-4">
+		<input type="text" class="form-control" id="min5" name="hyrja_min_metra">
+      </div>
+	  <span>metra </span>
+    </div> 
+
+    <div class="form-group">
+      <label class="control-label col-xs-2">Maximum</label>
+      <div class="col-xs-4">
+        <input type="text" class="form-control" id="max6" name="hyrja_max_metra">
+      </div>
+	  <span>metra </span>
+    </div>
+	
+	<h4>Dalje</h4>
+    <div class="form-group">
+      <label class="control-label col-xs-2">Minimum</label>
+      <div class="col-xs-4">
+		<input type="text" class="form-control" id="mind7" name="dalja_min_metra">
+      </div>
+	  <span>metra </span>
+    </div> 
+
+    <div class="form-group">
+      <label class="control-label col-xs-2">Maximum</label>
+      <div class="col-xs-4">
+        <input type="text" class="form-control" id="maxd8" name="dalja_max_metra">
+      </div>
+	  <span>metra </span>
+    </div>
+	
+    <div class="form-group">
+      <div class="col-xs-12 text-center">
+        <input type="submit" class="btn btn-info" value="Dergo">
+        <input type="button" class="btn btn-info" value="Fshij">
+      </div>
+    </div>
+  </form>
+</div>
+<% include partials/footer %>

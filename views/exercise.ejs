@@ -1,0 +1,21 @@
+<%- include partials/header %>
+<div>
+<p>te dhenat jane ketu</p>
+<ul>
+	<li><%= data.id %></li>
+	<li><%= data.project %></li>
+	</ul>
+</div>
+<table>
+	<% for(var i=0; i < projects.length; i++){ %> 
+	<tr>
+			<td><%= projects[i].id %></td>
+			<td><%= projects[i].name %></td>
+		</tr>
+		<% } %>
+	</table>
+	
+
+
+
+<% include partials/footer %>
