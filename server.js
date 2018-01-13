@@ -33,7 +33,7 @@ MongoClient.connect(mongoURL, function(err, database){
 });
 
 app.get('/edit/:id',function(req,res){
-    var title="Edito te dhenat";
+    var title="Edito të dhënat";
     var id=req.params.id;
     qkmk.findOne({_id: objectId(id)},function(err,result){
         if(err)
@@ -44,7 +44,6 @@ app.get('/edit/:id',function(req,res){
     });
 
 });
-
 
 app.post('/update/:id', function(req,res){
     var data= req.body;
@@ -71,13 +70,13 @@ app.get("/delete/:id",function(req,res){
 });
 
 app.get('/',function(req,res) {
- var title='Forma e regjistrimit te pikave kufitare';
+ var title='Forma e regjistrimit të pikave kufitare';
            res.render('index', {title: title});
 
 });
 
 app.get('/show',function(req,res){
-var title="Lista me te dhena";
+var title="Lista me të dhëna";
 qkmk.find({}).toArray(function(err,docs){
 if (err)
 {
@@ -88,6 +87,19 @@ res.render('show',{title:title, docs:docs});
 });
 });
 
+
+app.get('/chart/:id',function(req,res) {
+    var title = 'Vizualizimet';
+    var id = req.params.id;
+    qkmk.findOne({_id: objectId(id)},function(err,docs){
+        if(err) {
+            console.log(err);
+            throw err;
+        }
+        console.log(docs);
+        res.render('chart', {title: title, docs:docs});    
+    });
+});
 
 
 app.post('/add',function(req,res){

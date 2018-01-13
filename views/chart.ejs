@@ -1,0 +1,128 @@
+<%- include partials/header %>
+<% include partials/nav %>
+
+<div id="containerChart" class="col-xs-5 col-xs-offset-0">
+<script type="text/javascript">
+	Highcharts.chart('containerChart', {
+    chart: {
+        type: 'column'
+    },
+    title: {
+        text: 'Vonesa maksimale në pikën kufitare <%= docs.pika_kufitare %>'
+    },
+    subtitle: {
+        text: ''
+    },
+    xAxis: {
+        categories: [
+            '<%= docs.pika_kufitare %>'
+        ],
+        crosshair: true
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: ''
+        }
+    },
+    tooltip: {
+        headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+        pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+            '<td style="padding:0"><b>{point.y:.1f}</b></td></tr>',
+        footerFormat: '</table>',
+        shared: true,
+        useHTML: true
+    },
+    plotOptions: {
+        column: {
+            pointPadding: 0.2,
+            borderWidth: 0,
+            dataLabels: {
+                enabled: true
+            },
+        }
+    },
+    series: [{
+        name: 'Hyrje (minuta)',
+        data: [<%= docs.hyrja_max_minuta %>]
+
+    }, {
+        name: 'Dalje (minuta)',
+        data: [<%= docs.dalja_max_minuta %>]
+
+    }, {
+        name: 'Hyrje - Kolona (metra)',
+        data: [<%= docs.hyrja_max_metra %>]
+
+    }, {
+        name: 'Dalje - Kolona (metra)',
+        data: [<%= docs.dalja_max_metra %>]
+
+    }]
+});
+</script>
+</div>
+
+
+<div id="containerChart1" class="col-xs-5 col-xs-offset-1">
+<script type="text/javascript">
+	Highcharts.chart('containerChart1', {
+    chart: {
+        type: 'column'
+    },
+    title: {
+        text: 'Vonesa minimale në pikën kufitare <%= docs.pika_kufitare %>'
+    },
+    subtitle: {
+        text: ''
+    },
+    xAxis: {
+        categories: [
+            '<%= docs.pika_kufitare %>'
+        ],
+        crosshair: true
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: ''
+        }
+    },
+    tooltip: {
+        headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+        pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+            '<td style="padding:0"><b>{point.y:.1f}</b></td></tr>',
+        footerFormat: '</table>',
+        shared: true,
+        useHTML: true
+    },
+    plotOptions: {
+        column: {
+            pointPadding: 0.2,
+            borderWidth: 0,
+            dataLabels: {
+                enabled: true
+            },
+        }
+    },
+    series: [{
+        name: 'Hyrje (minuta)',
+        data: [<%= docs.hyrja_min_minuta %>]
+
+    }, {
+        name: 'Dalje (minuta)',
+        data: [<%= docs.dalja_min_minuta %>]
+
+    }, {
+        name: 'Hyrje - Kolona (metra)',
+        data: [<%= docs.hyrja_min_metra %>]
+
+    }, {
+        name: 'Dalje - Kolona (metra)',
+        data: [<%= docs.dalja_min_metra %>]
+
+    }]
+});
+</script>
+</div>
+<% include partials/footer %>

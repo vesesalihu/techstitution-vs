@@ -1,103 +1,118 @@
 <%- include partials/header %>
 <% include partials/nav %>
 
+<div class="container border-wait-ct col-xs-4  col-xs-offset-3">
+    <h3 class="well well-sm"><%=title%></h3>
+    <form class="form-horizontal" method="POST" action="/update/<%= doc._id %>"  id="border-wait-form">
+        <h2>1</h2>
+        <div class="form-group">
 
+            <label class="control-label col-xs-3 label-top-fix">Pika kufitare:</label>
+            <div class="col-xs-4">
+                <div class="dropdown">
+                    <select class="btn" id="pika_kufitare" name="pika_kufitare" value="<%= doc.pika_kufitare %>">
+                        <option <%=doc.pika_kufitare=="" ? "selected" : "" %> id="default">Zgjedh piken kufitare...</option>
+                        <option <%=doc.pika_kufitare=="Vërmicë" ? "selected" : "" %> id="Vermice">Vërmicë</option>
+                        <option <%=doc.pika_kufitare=="Dheu i bardhë" ? "selected" : "" %> id="Dheu i bardhë">Dheu i bardhë</option>
+                        <option <%=doc.pika_kufitare=="Qafë e Prushit" ? "selected" : "" %>id="Qafë e Prushit">Qafë e prushit</option>
+                        <option <%=doc.pika_kufitare=="Qafë e Morinës" ? "selected" : "" %> id="Qafë e Morinës">Qafë e Morinës</option>
+                        <option <%=doc.pika_kufitare=="Glloboqicë" ? "selected" : "" %> id="Glloboqicë">Glloboqicë</option>
+                        <option <%=doc.pika_kufitare=="Kullë" ? "selected" : "" %> id="Kullë">Kullë</option>
+                        <option <%=doc.pika_kufitare=="Bërnjak" ? "selected" : "" %> id="Bërnjak">Bërnjak</option>
+                        <option <%=doc.pika_kufitare=="Jarinje" ? "selected" : "" %> id="Jarinje">Jarinje</option>
+                        <option <%=doc.pika_kufitare=="Merdarë" ? "selected" : "" %> id="Merdarë">Merdarë</option>
+                        <option <%=doc.pika_kufitare=="Mutivodë" ? "selected" : "" %> id="Mutivodë">Mutivodë</option>
+                        <option <%=doc.pika_kufitare=="Muçibabë" ? "selected" : "" %> id="Muçibabë">Muçibabë</option>
+                        <option <%=doc.pika_kufitare=="Hani i Elezit" ? "selected" : "" %> id="Hani i Elezit">Hani i Elezit</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <h2>2</h2>
+        <h4>Hyrje</h4>
+        <div class="form-group">
 
+            <label class="control-label col-xs-2  col-xs-offset-1 ">Minimum</label>
+            <div class="col-xs-4">
+                <input type="number" class="form-control" id="min1" name="hyrja_min_minuta" value="<%= doc.hyrja_min_minuta %>">
+            </div>
 
-<div class="container border-wait-ct">
-  <h2 class="panel panel-info"><%= title %></h2> 
-  <form class="form-horizontal" method="POST" action="/update/<%= doc._id %>"  id="border-wait-form">
-    <div class="form-group">
-      <label class="control-label col-xs-2 label-top-fix">Pika kufitare:</label>
-      <div class="col-xs-4">
-      <div class="dropdown">
-    <!--  <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown">Zgjedh piken kufitare -->
-        <span class="caret"></span></button>
-    <select class="form-control" id="pika_kufitare" name="pika_kufitare" value="<%= doc.pika_kufitare %>">
-               <option selected id="default">Zgjedh piken kufitare...</option>
-               <option id="Morine">Morine</option>
-               <option id="Merdare">Merdare</option>
-               <option id="Dheu_bardhe">Dheu i bardhe</option>
-               <option id="Jarinje">Jarinje</option>
-             </select>
-    </div>
-      </div>
-    </div>
-  <hr>
-  <h4>Hyrje</h4>
-    <div class="form-group">
-      <label class="control-label col-xs-2 label-top-fix">Minimum</label>
-      <div class="col-xs-4">
-    <input type="text" class="form-control" id="min1" name="hyrja_min_minuta" value="<%= doc.hyrja_min_minuta %>">
-      </div>
-    <span class="label-top-fix">minuta </span>
-    </div> 
+            <label class="control-label col-xs-offset-0">minuta</label>
+        </div>
 
-    <div class="form-group">
-      <label class="control-label col-xs-2">Maximum</label>
-      <div class="col-xs-4">
-        <input type="text" class="form-control" id="max2" name="hyrja_max_minuta" value="<%= doc.hyrja_max_minuta %>">
-      </div>
-    <span>minuta </span>
-    </div>
-  
-  <h4>Dalje</h4>
-    <div class="form-group">
-      <label class="control-label col-xs-2">Minimum</label>
-      <div class="col-xs-4">
-    <input type="text" class="form-control" id="min3" name="dalja_min_minuta" value="<%= doc.dalja_min_minuta %>">
-      </div>
-    <span>minuta </span>
-    </div> 
+        <div class="form-group">
+            <label class="control-label col-xs-2  col-xs-offset-1">Maximum</label>
+            <div class="col-xs-4">
+                <input type="number" class="form-control" id="max2" name="hyrja_max_minuta" value="<%= doc.hyrja_max_minuta %>" >
+            </div>
+            <label class="control-label col-xs-offset-0">minuta</label>
+        </div>
 
-    <div class="form-group">
-      <label class="control-label col-xs-2">Maximum</label>
-      <div class="col-xs-4">
-        <input type="text" class="form-control" id="max4" name="dalja_max_minuta" value="<%= doc.dalja_min_minuta %>">
-      </div>
-    <span>minuta </span>
-    </div>
-  <hr>
-  <h4>Hyrje</h4>
-    <div class="form-group">
-      <label class="control-label col-xs-2">Minimum</label>
-      <div class="col-xs-4">
-    <input type="text" class="form-control" id="min5" name="hyrja_min_metra" value="<%= doc.hyrja_min_metra %>">
-      </div>
-    <span>metra </span>
-    </div> 
+        <h4>Dalje</h4>
+        <div class="form-group">
+            <label class="control-label col-xs-2  col-xs-offset-1 ">Minimum</label>
+            <div class="col-xs-4">
+                <input type="number" class="form-control" id="min3" name="dalja_min_minuta" value="<%= doc.dalja_min_minuta %>">
+            </div>
+            <label class="control-label col-xs-offset-0">minuta</label>
+        </div>
 
-    <div class="form-group">
-      <label class="control-label col-xs-2">Maximum</label>
-      <div class="col-xs-4">
-        <input type="text" class="form-control" id="max6" name="hyrja_max_metra" value="<%= doc.hyrja_max_metra %>">
-      </div>
-    <span>metra </span>
-    </div>
-  
-  <h4>Dalje</h4>
-    <div class="form-group">
-      <label class="control-label col-xs-2">Minimum</label>
-      <div class="col-xs-4">
-    <input type="text" class="form-control" id="mind7" name="dalja_min_metra" value="<%= doc.dalja_min_metra %>">
-      </div>
-    <span>metra </span>
-    </div> 
+        <div class="form-group">
+            <label class="control-label col-xs-2  col-xs-offset-1">Maximum</label>
+            <div class="col-xs-4">
+                <input type="number" class="form-control" id="max4" name="dalja_max_minuta" value="<%= doc.dalja_max_minuta %>">
+            </div>
+            <label class="control-label col-xs-offset-0">minuta</label>
+        </div>
+        <h2>3</h2>
+        <h4>Hyrje</h4>
+        <div class="form-group">
+            <label class="control-label col-xs-2  col-xs-offset-1">Minimum</label>
+            <div class="col-xs-4">
+                <input type="number" class="form-control" id="min5" name="hyrja_min_metra" value="<%= doc.hyrja_min_metra %>">
+            </div>
+            <label class="control-label col-xs-offset-0">metra</label>
+        </div>
 
-    <div class="form-group">
-      <label class="control-label col-xs-2">Maximum</label>
-      <div class="col-xs-4">
-        <input type="text" class="form-control" id="maxd8" name="dalja_max_metra" value="<%= doc.dalja_max_metra %>">
-      </div>
-    <span>metra </span>
-    </div>
-  
-    <div class="form-group">
-      <div class="col-xs-12 text-center">
-        <input type="submit" class="btn btn-info" value="Dergo">
-        <input type="button" class="btn btn-info" value="Fshij">
-      </div>
-    </div>
-  </form>
+        <div class="form-group">
+            <label class="control-label col-xs-2  col-xs-offset-1">Maximum</label>
+            <div class="col-xs-4">
+                <input type="number" class="form-control" id="max6" name="hyrja_max_metra" value="<%= doc.hyrja_max_metra %>">
+            </div>
+            <label class="control-label col-xs-offset-0">metra</label>
+
+        </div>
+
+        <h4>Dalje</h4>
+        <div class="form-group">
+            <label class="control-label col-xs-2  col-xs-offset-1">Minimum</label>
+            <div class="col-xs-4">
+                <input type="number" class="form-control" id="mind7" name="dalja_min_metra" value="<%= doc.dalja_min_metra %>">
+            </div>
+            <label class="control-label col-xs-offset-0">metra</label>
+
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-xs-2  col-xs-offset-1">Maximum</label>
+            <div class="col-xs-4">
+                <input type="number" class="form-control" id="maxd8"  name="dalja_max_metra" value="<%= doc.dalja_max_metra %>">
+            </div>
+            <label class="control-label col-xs-offset-0">metra</label>
+        </div>
+
+        <div class="form-group">
+            <div class="col-xs-12 text-center">
+                <input type="submit" class="btn btn-info" value="Dergo">
+                <input type="reset" class="btn btn-info" value="Fshij">
+            </div>
+        </div>
+    </form>
 </div>
+
 <% include partials/footer %>
+
+
+
+
+

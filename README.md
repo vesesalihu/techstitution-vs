@@ -1,8 +1,11 @@
-# techstitution-vs
+# Techstitution's Final Project
 
-MongoDB:
-1.Go to C:\Program Files\MongoDB\Server\3.6\bin>
-2.type: mongod
-3.Open another CMD
-4.Go to techstitution project:
-5.type= nodemon server.js
+## Installing in local environment
+In terminal write the following commands:
+
+* cd desktop
+* git clone https://github.com/vesesalihu/techstitution-vs.git
+* cd techstitution-vs
+* nodemon server.js
+
+###### Then navigate to browser in "localhost:3001"
