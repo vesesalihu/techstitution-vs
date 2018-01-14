@@ -30,15 +30,7 @@ h2:after {
 
  border: 2px solid lightgray;
     border-radius: 15px; 
-   
-   
-  /*  background: linear-gradient(lightgray,#F7F7C9); */
-/*  background: linear-gradient(lightgray,#FFC77D);*/
-/*background: linear-gradient(lightgray,#87BAC7);*/
- /*   background-color:#b4b4b4;*/
-    /*color:white;*/
-
-	
+  	
 }
 .label-top-fix{
 padding-top: 20px ;
